@@ -1,0 +1,35 @@
+{
+  "name": "full-stack-open-pokedex",
+  "version": "1.0.0",
+  "description": "Full Stack Open Pokédex app with CI/CD pipeline",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "start:front": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext .js,.jsx",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "axios": "^1.6.5",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.41.0",
+    "@testing-library/jest-dom": "^6.2.0",
+    "@testing-library/react": "^14.1.2",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "jsdom": "^23.2.0",
+    "nodemon": "^3.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.1",
+    "vite": "^5.0.11",
+    "vitest": "^1.1.3"
+  }
+}
